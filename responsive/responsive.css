@@ -178,5 +178,19 @@ main{
     .facts {
        grid-template-columns: repeat(2, 1fr);
        gap: 20px;
+       justify-items: center;
+    }
+    .fact-some{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .some-facts{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .facts-discription {
+        margin-bottom: 20px;
     }
 }
