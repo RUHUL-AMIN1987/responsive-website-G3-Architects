@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-fornt{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Sherd Style */
+.display-flex{
+    display: flex;
+}
+.bt-primary{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(255, 144, 14, 1);
+    padding: 20px 24px;
+    border-radius: 8px;
+    border: none;
+}
+/* Navbar Style */
+.navbar, .banner{
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+   margin: 0 auto;
+}
+.brand{
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgba(19, 19, 19, 1);
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(66, 66, 66, 1);
+}
+.bg-primary{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.banner-items{
+    text-align: center;
+    width: 530px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.banner-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgba(19, 19, 19, 1);
+}
+.banner-discription{
+    font-size: 1rem;
+    color: rgba(114, 114, 114, 1);
+}
+.banner-image{
+    width: 100%;
+}
+
+
+
+/* Responsive Media Query */
+@media screen and (max-width: 576px) {
+    .navbar, .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
