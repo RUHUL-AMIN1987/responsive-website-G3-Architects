@@ -100,7 +100,7 @@ main{
     font-size: 1rem;
     color: rgba(114, 114, 114, 1);
 }
-.Facts{
+.facts{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
@@ -136,26 +136,47 @@ main{
 
 
 
-/* Responsive Media Query */
+/* Responsive Media Query Mobile*/
 
 @media screen and (max-width: 576px) {
     .navbar, 
     .nav-links, 
-    .tems {
+    .tems, 
+    .facts{
         flex-direction: column;
         align-items: center;
     }
-    .teams-image{
+    .teams-image,
+    .facts{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .facts{
+        justify-items: center;
+        gap: 20px;
+    }
+    .some-facts{
+        margin-top: 20px;
+    }
+    .facts-discription{
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .teams-content{
         margin-left: 20px;
     }
+    .fact-some{
+        margin-left: 20px;
+    }
 }
+    /* Responsive Media Query  Tabe*/
 
 @media screen and (min-width: 576px) and (max-width: 990px) {
-    .tems{
+    .tems {
         flex-direction: column;
         margin: 50px auto;
+    }
+    .facts {
+       grid-template-columns: repeat(2, 1fr);
+       gap: 20px;
     }
 }
