@@ -71,7 +71,7 @@ main{
 
 .tems{
     align-items: center;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 .teams-content{
     /* width: 550px; */
@@ -105,7 +105,10 @@ main{
     grid-template-columns: repeat(4, 1fr);
 }
 .some-facts{
-    margin-top: 130px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgba(19, 19, 19, 1);
+    justify-content: left;
 }
 .fact-card{
     border: 1px solid #FF900E;
@@ -137,6 +140,8 @@ main{
 /* Features Style */
 .features{
     gap: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .border{
     border-left: 5px solid rgba(255, 144, 14, 1);
@@ -154,7 +159,30 @@ main{
     font-size: 1.25rem;
     font-weight: 600;
 }
+
+.button{
+    margin-top: -90px;
+    margin-left: -80px;
+}
+#experience-badge{
+    padding: 50px 40px;
+    border-radius: 8px;
+    background-color: rgba(255, 144, 14, 1);
+    border: none;
+}
+#experience-year{
+    font-size: 65px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+}
+#experience{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+}
+
 /* Sponser Style */
+
 .sponsport{
     max-width: 540px;
     text-align: center;
@@ -194,19 +222,31 @@ main{
     .navbar, 
     .nav-links, 
     .tems, 
-    .facts{
+    .facts, 
+    .features{
         flex-direction: column;
         align-items: center;
     }
     .teams-image,
-    .facts, .sponsors-image {
+    .facts, 
+    .sponsors-image,
+    .features{
         grid-template-columns: repeat(1, 1fr);
     }
     .sponsors-image{
         gap: 40px;
         justify-items: center;
     }
+    .features{
+        gap: 0px;
     }
+
+    }
+    /* .button{
+        margin-top: 20px;
+        margin-left: 20px;
+    } */
+
     .facts{
         justify-items: center;
         gap: 20px;
